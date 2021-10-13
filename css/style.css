@@ -1,0 +1,180 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Grid CSS */
+
+#heroGrid {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 250px;
+  height: 10vh;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 100%;
+  grid-template-areas:
+  "headerimg";
+}
+
+#headerimg {
+  grid-area: headerimg;
+  background-image: url("../images/Header.jpg");
+  background-size: 600px;
+  padding: 110px;
+  margin: 16px;
+}
+
+#mywork {
+  position: absolute;
+  top: 800px;
+  font-size: 12px;
+  line-height: 30px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#headline {
+  background-color: white;
+  border-bottom: 5px solid #FFCD46;
+  font-size: 12px;
+  line-height: 30px;
+  position: absolute;
+  top: 220px;
+  padding: 25px;
+  max-width: 670px;
+  z-index: 100;
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #FFCD46;
+}
+
+
+/* Navigation CSS */
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+#navBar h1 {
+  width: 25%;
+  font-weight: 500;
+  text-decoration: underline 5px #FFCD46;
+}
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+.icons img {
+  margin: 15px;
+  cursor: pointer;
+}
+.highlight {
+  color: #FF6200;
+  font-weight: 700;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #FFCD46;
+margin: 5px 5px;
+padding: 10px 10px;
+}
+
+.button2 {
+  background-color: #FFCD46;
+  color: black;
+  border: 2px solid #FFCD46;
+margin: 0px 5px;
+padding: 0px 10px;
+font-size: 16px;
+font-weight: 300;
+}
+
+a {
+  font-size: 12px; 
+  text-decoration: none;
+  color: black;
+}
+/* Typography CSS */
+
+
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 50px;
+  margin: 0px 0px;
+  color: #000000;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 550;
+  margin: 0px 0px;
+  color: grey; }
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #636364;
+}
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #heroGrid {
+    grid-template-areas:
+    "featuredProduct featuredProduct"
+    "secondaryProduct CTA";
+  }
+  
+}
